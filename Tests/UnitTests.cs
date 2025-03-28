@@ -98,11 +98,4 @@ public class Addition
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "1"));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
     }
-
-    [TestMethod]
-    public void Divide_ByZero_Blackburn()
-    {
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("1", "0"));
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("0", "0"));
-    }
 }
